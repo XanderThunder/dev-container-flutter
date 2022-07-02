@@ -12,7 +12,12 @@
   },
 
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": ["dart-code.dart-code", "dart-code.flutter"],
+  "extensions": [
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "golang.go",
+    "esbenp.prettier-vscode"
+  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
@@ -20,6 +25,9 @@
   // Use 'postCreateCommand' to run commands after the container is created.
   // "postCreateCommand": "",
 
+  // Allow USB device access for testing with physical android devices
+  // "runArgs": ["--privileged", "-v", "/dev/bus/usb:/dev/bus/usb"],
+  
   // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
   "remoteUser": "vscode"
 }
